@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+//importamos componentes 
+import Button from "./components/MyButton/MyButton";
+import NavBar from "./components/NavBar/NavBar"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <NavBar/>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -18,6 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+        <Button/>
+        <Button/>
+        <Button/>
     </div>
   );
 }
