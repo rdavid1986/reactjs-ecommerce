@@ -1,29 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
-//importamos componentes 
-import Button from "./components/MyButton/MyButton";
+
 import NavBar from "./components/NavBar/NavBar"
+import ItemListContainer from "./components/itemList/ItemListContainer"
+import logoNvidiaAmd from "./components/img/logoNvidiaAmd.jpg";
 
 function App() {
-  return (
+return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <NavBar/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-        <Button/>
-        <Button/>
-        <Button/>
+        <header className="App__header">
+            <div className="container__logo">
+                <img src={logoNvidiaAmd} className="logo" alt="logo" />
+                <h2>Video Cards Store</h2>
+            </div>
+            <NavBar/>
+            <ItemListContainer greeting="Bienvenidos "/>
+        </header>
+        <main className="main">
+        </main>
+       
+            
     </div>
-  );
+);
 }
 
 export default App;
