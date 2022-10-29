@@ -14,7 +14,7 @@ return (
             <NavBar/>
         </header>
         <main className="main">
-            <ItemListContainer greeting="Bienvenidos "/>
+            <ItemListContainer greeting="Bienvenidos" />
         </main>
        
             
