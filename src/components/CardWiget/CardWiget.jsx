@@ -1,10 +1,11 @@
 import "./CardWiget.css";
-import CartShopping from "../img/CartShopping.png";
+
+import imgCart from "../img/cartShopping.png";
 
 function CardWiget() {
   return (
     <div>
-        <img src={CartShopping} className="cartShopping" alt="Cart Shopping"/>
+        <img src={imgCart} className="cartShopping" alt="Cart Shopping"/>
     </div>
   )
 }

@@ -2,7 +2,7 @@ import "./NavBar.css";
 
 import CardWiget from "../CardWiget/CardWiget";
 
-function NavBar (props) {
+function NavBar () {
     return  <nav className="container__nav">
                 <ul className="nav__ul">
                  

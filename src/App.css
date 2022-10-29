@@ -6,23 +6,25 @@
   pointer-events: none;
   margin: 50px;
 }
+.App {
+  background-color: black;
+}
 .App__header {
-  background-color: #282c34;
-  min-height: 30vh;
+ /*  background-color: #282c34; */
+  min-height: 25vh;
+  background: linear-gradient(104.3deg, rgba(2,0,36,1) -3%, rgba(217,6,6,1) 10.6%, 10% ,black 30%,45%, rgb(0 85 40) 92%, black 84%);
+  box-shadow: 5px -5px 10px rgb(0 85 40), -5px 5px 10px rgb(217 6 6 / 43%);
   width: 100%;
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
 }
-.main {
-  background-color: #282c34;
-  height: 70vh;
-}
+
 .h1itemlist {
   text-align: center;
 }
@@ -31,6 +33,18 @@
   flex-direction: row;
   align-items: center;
   border-radius:20px;
+  color: white;
+  text-shadow: black 5px 5px;
+}
+.main {
+  height: 70vh;
+  border-radius: 50px;
+  box-shadow:5px 0px 22px rgb(217 6 6 / 39%),
+             0px 5px 10px rgb(4 180 85);
+  text-align: center;
+  margin: 50px;
+  background: linear-gradient(100.3deg, rgba(2,0,36,1) 6%,rgb(0 85 40) -10.6%, 22% ,black 50%,67%, rgb(217 6 6 / 47%) 93%, black 84%);
+  background: rotate(180deg);
 }
 
 
