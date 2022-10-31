@@ -1,6 +1,6 @@
 import "./MyButton.css";
 
-function Button (props) {
+function MyButton (props) {
     console.log('hola desde mi MyButton');
     console.log(props);
     const styleButton = { backgroundColor: props.color };
@@ -11,4 +11,4 @@ function Button (props) {
     );
   }
  
-  export default Button;
+  export default MyButton;

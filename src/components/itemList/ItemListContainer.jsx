@@ -1,8 +1,16 @@
-function ItemListContainer(props) {
+
+import Item from "../ItemList/Item";
+import "./ItemList.css";
+
+function ItemListContainer() {
   return (
-      <h1 className="itemlist" style={{color: "red"}}>{props.greeting}</h1> 
-  )
+    <div className="item__list">
+      <Item 
+      greeting="Bienvenido" 
+      />
+      
+    </div>
+  );
 }
 
-export default ItemListContainer
- 
+export default ItemListContainer;
