@@ -1,6 +1,5 @@
 
 import Item from "./item";
-import "./Item.css";
 
 function ItemListContainer() {
   return (
