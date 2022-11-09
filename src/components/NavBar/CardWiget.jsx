@@ -1,4 +1,4 @@
-import "./cartShopping.css";
+import "./cartWiget.css";
 
 function CardWiget() {
   return (
