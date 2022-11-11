@@ -1,3 +1,4 @@
+import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
 
 function ItemDetail({product}) {
@@ -10,6 +11,7 @@ function ItemDetail({product}) {
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
                 <h4 className="price">$ {product.price}</h4>
+                <ItemCount stock={5} tittle="Agregar al carrito" />
             </div>
         </div>
     )
