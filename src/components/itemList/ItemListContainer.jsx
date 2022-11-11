@@ -16,7 +16,7 @@ function ItemListContainer() {
 
   useEffect(() => {
     getItemAsync();
-  }, []);
+  });
 
   return (
     <div className="item__list">
