@@ -17,7 +17,7 @@ function ItemDetailContainer() {
 
     useEffect(() => {
         getItemAsync();
-    });
+    },[idItem]);
 
     return <ItemDetail product={product} />;
 }

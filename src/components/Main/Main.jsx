@@ -11,7 +11,7 @@ function Main() {
       <Header />
         <Routes>
           <Route path="/" element={<ItemListContainer />} />
-          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/category/categoryId" element={<ItemListContainer />} />
           <Route path="/detail/:idItem" element={<ItemDetailContainer />} />
           <Route path="*" element={<h1>Error 404: La pagina solicitada no existe</h1>} />
         </Routes>
