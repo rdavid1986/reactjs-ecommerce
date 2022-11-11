@@ -7,15 +7,19 @@ function NavBar() {
     <nav className="container__nav">
       <ul className="nav__ul">
         <li className="nav__li">
-          <a href="#">Categoria 1</a>
+          <link to="/category(
+          /smartphones">SmartPhones</link>
         </li>
         <li className="nav__li">
-          <a href="#">Categoria 2</a>
+          <link to="/category/laptops">LapTops</link>
         </li>
         <li className="nav__li">
-          <a href="#">
+          <link to="/category/skincare">Skin CAre</link>
+        </li>
+        <li className="nav__li">
+          <link to="#">
             <CardWiget />
-          </a>
+          </link>
         </li>
       </ul>
     </nav>

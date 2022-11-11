@@ -6,7 +6,7 @@ function Header() {
     <header className="App__header">
       <div className="container__logo">
         <img src="img/logotechstore.jpg" className="logo" alt="logo" />
-        <h2>Tech Store</h2>
+        <h2><link to="/">Tech Store</link></h2>
       </div>
       <NavBar />
     </header>

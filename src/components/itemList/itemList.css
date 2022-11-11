@@ -8,6 +8,7 @@
     align-items: center;
 }
 .card__div {
+    
     margin: 40px;
     border-radius: 15px;
     background: white;
@@ -16,6 +17,10 @@
     height:500px;
     width:300px;
 
+}
+.card__div:hover {
+    height:520px;
+    width:310px;
 }
 .card__img {
     margin-top: 20px;
