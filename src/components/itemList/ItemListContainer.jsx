@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-import "./ItemList.css";
+import "./itemList.css";
 import Item from "./Item";
 import GetItem from "../../services/mockService.js";
 
@@ -16,7 +16,7 @@ function ItemListContainer() {
 
   useEffect(() => {
     getItemAsync();
-  }, [idCategory]);
+  }, []);
 
   return (
     <div className="item__list">

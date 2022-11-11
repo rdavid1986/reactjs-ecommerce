@@ -1,7 +1,8 @@
 import React from "react";
 import ItemListContainer from "../ItemList/ItemListContainer";
-import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ItemDetailContainer from "../ItemDetail/ItemDetailContainer";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 function Main() {
   return (
     <main className="main">

@@ -2,7 +2,7 @@ import React from "react";
 import MyButton from "../MyButton/MyButton.jsx";
 import { Link } from "react-router-dom";
 
-import "./ItemList.css";
+import "./itemList.css";
 
 function Item({ title, imgurl, price, id}) {
   const urlDetail = `/detail/${id}`;
