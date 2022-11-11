@@ -12,7 +12,7 @@ function Header() {
         </Link>
       </div>
       <NavBar />
-    </header>
+    </header> 
   );
 }
 
