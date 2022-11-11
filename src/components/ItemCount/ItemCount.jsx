@@ -14,7 +14,7 @@ function ItemCount(props) {
   return (
     <div>
       <button onClick={handleResta} className="butoon__count">-</button>
-      <span>{Count}</span>
+      <span className="count">{Count}</span>
       <button onClick={handleSuma} className="butoon__count">+</button>
       <br />
       <button>{props.tittle}</button>

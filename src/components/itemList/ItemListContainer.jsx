@@ -1,14 +1,13 @@
-import { useState, useEffect } from "React";
+import { useState, useEffect } from "react";
 
-import Item from "./item";
-import "./itemList.css";
+import Item from "./Item";
+import "./ItemList.css";
 import GetItem from "../../services/mockService.js";
 
 function ItemListContainer() {
   const [products, setProducts] = useState([]);
 
   async function getItemAsync() {
-
     let respuesta = await GetItem();
     setProducts(respuesta);
   }
