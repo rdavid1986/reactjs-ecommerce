@@ -3,19 +3,19 @@ import { useParams } from "react-router-dom";
 
 import "./itemList.css";
 import Item from "./Item";
-import GetItem from "../../services/mockService.js";
+import  GetItems  from "../../services/mockService.js";
 
 function ItemListContainer() {
   const [products, setProducts] = useState([]);
   const { idCategory } = useParams();
   
-  async function getItemAsync() {
-    let respuesta = await GetItem(idCategory);
+  async function getItemsAsync() {
+    let respuesta = await GetItems(idCategory);
     setProducts(respuesta);
   }
 
   useEffect(() => {
-    getItemAsync();
+    getItemsAsync();
   },[idCategory]);
 
   return (

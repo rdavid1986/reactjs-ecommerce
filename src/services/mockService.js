@@ -1,19 +1,19 @@
 /* back end */
 import products from "../data/data.js";
 
-function GetItems(categoryId) {
+export function GetItems(idCategory) {
   return new Promise((resolve) => {
-    if (categoryId === undefined) {
+    if (idCategory === undefined) {
       setTimeout(() => {
         resolve(products);
-      }, 2000);
+      }, 500);
     } else {
       setTimeout(() => {
         let itemsFilter = products.filter(
-          (item) => item.category === categoryId
+          (item) => item.category === idCategory
         );
         resolve(itemsFilter);
-      }, 2000);
+      }, 500);
     }
   });
 }
@@ -24,7 +24,7 @@ export function getSingleItem(idParam){
 
     setTimeout(() => {
       resolve(itemFind);
-    }, 2000);
+    }, 500);
   })
 }
 
