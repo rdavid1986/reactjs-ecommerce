@@ -7,13 +7,13 @@ function NavBar() {
     <nav className="container__nav">
       <ul className="nav__ul">
         <li className="nav__li">
-          <Link to="/">SmartPhones</Link>
+          <Link to="/category/SmartPhones">SmartPhones</Link>
         </li>
         <li className="nav__li">
-          <Link to="/">LapTops</Link>
+          <Link to="/category/LapTops">LapTops</Link>
         </li>
         <li className="nav__li">
-          <Link to="/">Skin CAre</Link>
+          <Link to="/category/Skincare">Skin Care</Link>
         </li>
         <li className="nav__li">
           <Link to="#">

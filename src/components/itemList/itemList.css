@@ -19,8 +19,8 @@
 
 }
 .card__div:hover {
-    height:520px;
-    width:310px;
+    box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
 }
 .card__img {
     margin-top: 20px;

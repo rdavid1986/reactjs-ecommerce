@@ -6,14 +6,15 @@ import "./itemList.css";
 function Item({ title, imgurl, price, id}) {
   const urlDetail = `/detail/${id}`;
   return (
-    <div className="card__div">
-      <img src={imgurl} alt={title}className="card__img" />
-      <h3 className="card__title">{title}</h3>
-      <p className="card__price">$ {price}</p>
+
       <Link to={urlDetail}>
-        <MyButton text="ver mas"/>
+        <div className="card__div">
+          <img src={imgurl} alt={title}className="card__img" />
+          <h3 className="card__title">{title}</h3>
+          <p className="card__price">$ {price}</p>
+            <MyButton text="ver mas"/>
+        </div>
       </Link>
-    </div>
 
   );
 } 
