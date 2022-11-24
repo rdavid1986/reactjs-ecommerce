@@ -10,10 +10,13 @@ function NavBar() {
           <Link to="/category/smartphones">SmartPhones</Link>
         </li>
         <li className="nav__li">
+          <Link to="/category/AMD-Radeon">AMD-Radeon</Link>
+        </li>
+        <li className="nav__li">
           <Link to="/category/laptops">LapTops</Link>
         </li>
         <li className="nav__li">
-          <Link to="/category/skincare">Skin Care</Link>
+          <Link to="/category/Nvidia">Nvidia</Link>
         </li>
         <li className="nav__li">
           <Link to="#">

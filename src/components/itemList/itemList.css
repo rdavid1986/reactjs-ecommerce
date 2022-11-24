@@ -8,7 +8,7 @@
     align-items: center;
 }
 .card__div {
-    
+    overflow: hidden;
     margin: 40px;
     border-radius: 15px;
     background: white;
@@ -25,6 +25,5 @@
 }
 .card__img {
     margin-top: 20px;
-    width:250px;
-    height: 166px;
+    height: 190px;
 }

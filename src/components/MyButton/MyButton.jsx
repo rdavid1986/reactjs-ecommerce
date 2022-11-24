@@ -1,14 +1,20 @@
+import React, { useState } from "react";
 import "./MyButton.css";
 
 function MyButton (props) {
-    console.log('hola desde mi MyButton');
-    console.log(props);
-    const styleButton = { backgroundColor: props.color };
-    return (
-      <button  style={styleButton} className="btn" >
-        {props.text}
-      </button>
-    );
+    let[colorBtn, setColorBtn] = useState(props.colorBtn)
+
+       function handdleClick() {
+        setColorBtn("#555");
+          //props.onTocuhButton && props.onTouchButton();  
+      }  
+
+      return (
+        <button onClick={handdleClick} style={{ backgroundColor: colorBtn}} 
+className="btn" >
+          {props.children}
+        </button>
+      );
   }
  
   export default MyButton;
