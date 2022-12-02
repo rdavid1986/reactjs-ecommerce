@@ -36,15 +36,18 @@
   color: white;
   text-shadow: black 5px 5px;
 }
+.container__logo a  {
+  color: white;
+  text-decoration: none;
+}
 .main {
   height: auto;
+  min-height:100vh;
   overflow: hidden;
-  border-radius: 50px;
   box-shadow:5px 0px 22px rgb(217 6 6 / 39%),
              0px 5px 10px rgb(217 6 6 / 39%);
   text-align: center;
-  margin: 50px;
-  background-image: url(../public/img/voxed-vende-humo.gif);
+  background-image: url(../public/img/fondomain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background: rotate(180deg);
