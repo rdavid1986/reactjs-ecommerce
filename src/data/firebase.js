@@ -14,5 +14,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export default function testDataBase() {
-    console.log(app);
+    console.log(app, "prueba de firabase");
 }
