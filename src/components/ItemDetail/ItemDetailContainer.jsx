@@ -6,10 +6,9 @@ import Loader from "../Loaders/Loader";
 
 function ItemDetailContainer() {
     const [product, setProduct] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     const { idItem } = useParams();
-
-    const [isLoading, setIsLoading] = useState(true);
 
     async function getItemAsync() {
         getSingleItem(idItem).then( res => {
@@ -17,11 +16,11 @@ function ItemDetailContainer() {
             setIsLoading(false);
         })
     }
-
+    //if
     useEffect(() => {
         getItemAsync();
     });
-
+    
     if(isLoading)
     return (
         <Loader/>
