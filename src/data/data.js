@@ -227,12 +227,13 @@ const products = [
   {
     id: 21,
     title: "mart Tv Philco Pld55us22api Led 4k 55'' Con Google Tv",
-    description: "Su resolución es 4K.Con Netflix, YouTube.Control LG Magic Remote no incluido.Sistema operativo Linux.Conectá tus dispositivos mediante sus 3 puertos HDMI y sus 2 puertos USB.Dimensiones: 123cm de ancho, 71.4cm de alto, 7.9cm de profundidad.Entretenimiento y conectividad en un mismo lugar.",
-    price: 
-    132.999,
+    description:
+      "Su resolución es 4K.Con Netflix, YouTube.Control LG Magic Remote no incluido.Sistema operativo Linux.Conectá tus dispositivos mediante sus 3 puertos HDMI y sus 2 puertos USB.Dimensiones: 123cm de ancho, 71.4cm de alto, 7.9cm de profundidad.Entretenimiento y conectividad en un mismo lugar.",
+    price: 132.999,
     stock: 133,
     category: "tv",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_959748-MLA52388549129_112022-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_959748-MLA52388549129_112022-O.webp",
   },
   {
     id: 22,
@@ -253,7 +254,8 @@ const products = [
     price: 389.499,
     stock: 26,
     category: "tv",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_725411-MLA51838343158_102022-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_725411-MLA51838343158_102022-O.webp",
   },
   {
     id: 24,
@@ -263,16 +265,19 @@ const products = [
     price: 150.499,
     stock: 113,
     category: "tv",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_743668-MLA48700227253_122021-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_743668-MLA48700227253_122021-O.webp",
   },
   {
     id: 25,
     title: "Smart Tv Noblex 55 Pulgadas Dk55x6550 4k Uhd",
-    description: "Control LG Magic Remote no incluido.Cuenta con conexión HDMI y USB.Entretenimiento y conectividad en un mismo lugar.",
+    description:
+      "Control LG Magic Remote no incluido.Cuenta con conexión HDMI y USB.Entretenimiento y conectividad en un mismo lugar.",
     price: 109.199,
     stock: 47,
     category: "tv",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_896897-MLA51786368670_102022-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_896897-MLA51786368670_102022-O.webp",
   },
   {
     id: 26,
@@ -282,7 +287,8 @@ const products = [
     price: 344.999,
     stock: 131,
     category: "videogames",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_791396-MLA47058527002_082021-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_791396-MLA47058527002_082021-O.webp",
   },
   {
     id: 27,
@@ -292,7 +298,8 @@ const products = [
     price: 419.999,
     stock: 17,
     category: "videogames",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_739160-MLA44484414453_012021-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_739160-MLA44484414453_012021-O.webp",
   },
   {
     id: 28,
@@ -302,7 +309,8 @@ const products = [
     price: 329.999,
     stock: 54,
     category: "videogames",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_963862-MLA45041918050_032021-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_963862-MLA45041918050_032021-O.webp",
   },
   {
     id: 29,
@@ -312,7 +320,8 @@ const products = [
     price: 173.999,
     stock: 7,
     category: "videogames",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_627149-MLA44484230438_012021-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_627149-MLA44484230438_012021-O.webp",
   },
   {
     id: 30,
@@ -322,7 +331,8 @@ const products = [
     price: 149.999,
     stock: 54,
     category: "videogames",
-    imgurl: "https://http2.mlstatic.com/D_NQ_NP_883371-MLA32731749246_112019-O.webp",
+    imgurl:
+      "https://http2.mlstatic.com/D_NQ_NP_883371-MLA32731749246_112019-O.webp",
   },
 ];
 

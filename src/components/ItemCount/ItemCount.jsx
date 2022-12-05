@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ItemCount.css";
-import MyButton from "../MyButton/MyButton"
+import MyButton from "../MyButton/MyButton";
 
 function ItemCount({ stock, onAddToCart }) {
   let [Count, setCount] = useState(1);
@@ -15,16 +15,20 @@ function ItemCount({ stock, onAddToCart }) {
   return (
     <div>
       <div>
-        <button onClick={handleResta} className="button__count">-</button>
+        <button onClick={handleResta} className="button__count">
+          -
+        </button>
         <span className="count">{Count}</span>
-        <button onClick={handleSuma} className="button__count">+</button>
+        <button onClick={handleSuma} className="button__count">
+          +
+        </button>
         <br />
       </div>
       <div>
-        <MyButton 
-        onTouchButton={() => onAddToCart(Count)}>Agregar al carrito</MyButton>
+        <MyButton onTouchButton={() => onAddToCart(Count)}>
+          Agregar al carrito
+        </MyButton>
       </div>
-
     </div>
   );
 }

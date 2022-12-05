@@ -1,7 +1,7 @@
 /* back end */
-import products from "../data/data.js";
+/* import products from "../data/data.js"; */
 
-export function GetItems(idCategory) {
+/* export function GetItems(idCategory) {
   return new Promise((resolve) => {
     if (idCategory === undefined) {
       setTimeout(() => {
@@ -17,7 +17,7 @@ export function GetItems(idCategory) {
     }
   });
 }
-export function getSingleItem(idParam){
+export function getSingleItem(idParam) {
   return new Promise((resolve, reject) => {
     let itemFind = products.find((item) => item.id === Number(idParam));
     if (itemFind === undefined) reject("El producto no existe");
@@ -25,7 +25,8 @@ export function getSingleItem(idParam){
     setTimeout(() => {
       resolve(itemFind);
     }, 500);
-  })
+  });
 }
 
 export default GetItems;
+ */
