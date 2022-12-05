@@ -7,9 +7,9 @@ function NavBar() {
     <nav className="container__nav">
       <ul className="nav__ul">
         <li className="nav__li">
-        <li className="nav__li">
-          <Link to="/category/tv">Smart tv</Link>
+            <Link to="/category/tv">Smart tv</Link>
         </li>
+        <li className="nav__li">
           <Link to="/category/smartphones">SmartPhones</Link>
         </li>
         <li className="nav__li">
@@ -25,7 +25,7 @@ function NavBar() {
           <Link to="/category/AMD-Radeon">AMD-Radeon</Link>
         </li>
         <li className="nav__li">
-          <Link to="#">
+          <Link to="/cart">
             <CardWiget />
           </Link>
         </li>

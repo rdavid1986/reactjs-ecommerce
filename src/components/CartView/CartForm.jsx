@@ -1,20 +1,20 @@
 import { useState } from "react";
-import MyButton from "../MyButton/MyButton";
+/* import MyButton from "../MyButton/MyButton"; */
 
 export default function CarrtForm(props) {
-    const [data, setDate] = useSatate({
+    const [data, setData] = useState({
         name:"",
         email:"",
         phone:"",
     });
 
-    function  onInputchange(event) {
+    function  onInputChange(event) {
         let nameInput = event.target.name;
         let value = event.target.value;
-        //Propiedades dinamicaqs
-        let bewDate = {...date } ;
+        //Propiedades dinamicas
+        let newData = {...data } ;
         newData[nameInput] = value;
-        setDate(newData);
+        setData(newData);
     }
 
     function onSubmit(event) {
@@ -24,7 +24,7 @@ export default function CarrtForm(props) {
     }
     return (
         <form onSubmit={onSubmit}>
-            {/* podriamos convertir los inputs en Componentes*/}
+            /* podriamos convertir los inputs en Componentes*/
             <div style={{ display: "flex", marginBottom: 8 }}>
                 <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>
                 Nombre
