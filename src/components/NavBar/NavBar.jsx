@@ -25,9 +25,7 @@ function NavBar() {
           <Link to="/category/AMD-Radeon">AMD-Radeon</Link>
         </li>
         <li className="nav__li">
-          <Link>
-            <CardWiget />
-          </Link>
+          <CardWiget />
         </li>
       </ul>
     </nav>
