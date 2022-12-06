@@ -11,10 +11,8 @@ function CardWiget() {
 
   return (
     <>
-      <Link to="/cart">
-        <img src="img/cartShopping.png" className="cartShopping" alt="Cart" />
-        <span style={{ color: "red" }}>{miContext.itemsInCart()}</span>
-      </Link>
+      <img src="img/cartShopping.png" className="cartShopping" alt="Cart" />
+      <span style={{ color: "red" }}>{miContext.itemsInCart()}</span>
     </>
   );
 }
