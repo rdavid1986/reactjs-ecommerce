@@ -8,7 +8,7 @@ import { cartContext } from "../../context/cartContext";
 import MyButton from "../MyButton/MyButton";
 
 function CartView() {
-  const { cart, removeItem, removeCart } = useContext(cartContext);
+  const { cart, removeItem, removeCart, precioTotalPorItem } = useContext(cartContext);
   /* let navigate = useNavigate(); */
 
   /* function handleExport() {
@@ -32,19 +32,30 @@ function CartView() {
   }*/
   return (
     <div className="cart-container">
-      {cart.map((item) => (
+      {
+      cart.length === 0
+        ? <h5>No hay productos en el carrito</h5>
+        :cart.map((item) => (
         <div key={item.id}>
           <img src={item.imgurl} alt={item.title} />
           <h2>{item.title}</h2>
           <h4>${item.price}</h4>
-          <h4>unidades: {item.count}</h4>
+          <p>unidades: {item.count}</p>
+          <p>Precio total de unidades: $ {precioTotalPorItem(item.id)}</p>
+
           <MyButton onTouchButton={() => removeItem(item.id)} colorBtn="red">
             X
           </MyButton>
         </div>
       ))}
+      
       {/* <CartForm onSubmit={handleCheckout} /> */}
       <MyButton onTouchButton={() => removeCart()}>Vaciar carrito</MyButton>
+      <div>
+        {
+        cart.length === 0 ? <h2>tiene que comprar</h2> : <h1>Resumen de compra</h1> 
+        } 
+      </div>
     </div>
   );
 }
