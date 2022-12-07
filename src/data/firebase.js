@@ -1,4 +1,4 @@
-import { initializeApp } from "firebase/app";
+/* import { initializeApp } from "firebase/app";
 import {
   getFirestore,
   collection,
@@ -33,7 +33,7 @@ export default async function getItems() {
 
   const documentsData = documentSnapshot.docs.map((doc) => {
     /* let docDataWithId = doc.data();
-    docDataWithId.id = doc.id; */
+    docDataWithId.id = doc.id; 
     // spread operator
     return {
       ...doc.data(),
@@ -430,3 +430,4 @@ export async function exportArrayToFirestore() {
     console.log("documento creado, id:", docOrder.id);
   }
 }
+ */

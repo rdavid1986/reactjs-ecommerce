@@ -2,11 +2,14 @@ import { createContext, useState } from "react";
 //importamos e inicializamos el contexto con createcontext()
 export const cartContext = createContext();
 //Creamos nuestro context provider
+
 export function CartContextProvider({ children }) {
-  const saludoContext = "Hola Context";
+  
   const [cart, setCart] = useState([]);
+  
 
   function addToCart(product, count) {
+    console.log(product, count)
     let itemAlreadyInCart = cart.findIndex(
       (itemInCart) => itemInCart.id === product.id
     );
@@ -31,9 +34,10 @@ export function CartContextProvider({ children }) {
     return total;
   }
 
-  /* function removeCartList() {
-            setCartList([])
-         } */
+  function removeCart() {
+    console.log(cart, "carrito")
+      setCart([])
+  }
   function removeItem(idRemove) {
     const newCart = [...cart];
     newCart.pop();
@@ -48,18 +52,19 @@ export function CartContextProvider({ children }) {
              return true/false 
         } */
 
-  /*  const value = {
-            saludoContext,
-            itemsInCart,
-            cart,
-        }; */
-
+   
+  const value = {
+              itemsInCart,
+              cart,
+              addToCart,
+              removeCart,
+              removeItem,
+          };
   //3. retornamos el Provider del context creado
   //4. Pasamos en la prop "value" las variables que queramos hacer visibles */
   return (
-    <cartContext.Provider
-      value={{ cart, addToCart, saludoContext, itemsInCart, removeItem }}>
-      {children}
+    <cartContext.Provider value={ value }>
+      { children }
     </cartContext.Provider>
   );
 }

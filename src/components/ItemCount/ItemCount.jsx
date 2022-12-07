@@ -3,7 +3,7 @@ import "./ItemCount.css";
 import MyButton from "../MyButton/MyButton"
 
 function ItemCount({ stock, onAddToCart }) {
-  let [Count, setCount] = useState(1);
+  const [Count, setCount] = useState(1);
 
   function handleSuma() {
     if (Count < stock) setCount(Count + 1);

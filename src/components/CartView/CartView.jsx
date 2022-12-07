@@ -1,34 +1,35 @@
 import React, { useContext } from "react";
 import "../CartView/CartView.css";
 import { cartContext } from "../../context/cartContext";
-import { createOrder } from "../../data/firebase";
-import CartForm from "./CartForm.jsx";
-import { useNavigate } from "react-router-dom";
+/* import { createOrder } from "../../data/firebase"; */
+
+/* import CartForm from "./CartForm.jsx"; */
+/* import { useNavigate } from "react-router-dom"; */
 import MyButton from "../MyButton/MyButton";
 
 function CartView() {
-  const { cart, removeItem } = useContext(cartContext);
-  let navigate = useNavigate();
+  const { cart, removeItem, removeCart } = useContext(cartContext);
+  /* let navigate = useNavigate(); */
 
   /* function handleExport() {
-    exportArrayToFirestore();
-  } */
+      exportArrayToFirestore();
+    } */
   if (cart.lenght === 0) return;
   <div className="cart__div">
     <h1>Carrito Vacio</h1>;
   </div>;
 
-  async function handleCheckout(event, data) {
+  /* async function handleCheckout(event, data) {
     //crear nuestro objeto , "orden de compra"
     const order = {
       buyer: data,
       items: cart,
       total: 0,
       date: new Date(),
-    };
-    const orderId = await createOrder(order);
-    navigate(`/thankyou/${orderId}`);
-  }
+    }; */
+  /* const orderId = await createOrder(order);
+    navigate(`/thankyou/${orderId}`); 
+  }*/
   return (
     <div className="cart-container">
       {cart.map((item) => (
@@ -42,8 +43,8 @@ function CartView() {
           </MyButton>
         </div>
       ))}
-      <CartForm onSubmit={handleCheckout} />
-      <MyButton>Vaciar carrito</MyButton>
+      {/* <CartForm onSubmit={handleCheckout} /> */}
+      <MyButton onTouchButton={() => removeCart()}>Vaciar carrito</MyButton>
     </div>
   );
 }
