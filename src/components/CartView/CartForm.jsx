@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./CartForm.css";
 /* import MyButton from "../MyButton/MyButton"; */
 
 export default function CarrtForm(props) {
@@ -18,15 +19,14 @@ export default function CarrtForm(props) {
     }
 
     function onSubmit(event) {
-        if (data.name.lenght === 0 ) return;
+        if (data.name.length === 0 ) return;
         event.preventDefault();
         props.onSubmit(event, data);
     }
     return (
-        <form onSubmit={onSubmit}>
-            /* podriamos convertir los inputs en Componentes*/
-            <div style={{ display: "flex", marginBottom: 8 }}>
-                <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>
+        <form className="form" onSubmit={onSubmit}>
+            <div className="name__input">
+                <label htmlFor="name">
                 Nombre
                 </label>
                 <input
@@ -38,8 +38,8 @@ export default function CarrtForm(props) {
                 />
             </div>
 
-            <div style={{ display: "flex", marginBottom: 8 }}>
-                <label htmlFor="email" style={{ width: "100px", marginRight: 4 }}>
+            <div className="email__input">
+                <label htmlFor="email">
                 Email
                 </label>
                 <input
@@ -51,8 +51,8 @@ export default function CarrtForm(props) {
                 />
             </div>
 
-            <div style={{ display: "flex", marginBottom: 8 }}>
-                <label htmlFor="phone" style={{ width: "100px", marginRight: 4 }}>
+            <div className="phone__input">
+                <label htmlFor="phone">
                 Teléfono
                 </label>
                 <input
@@ -64,7 +64,7 @@ export default function CarrtForm(props) {
                 />
             </div>
 
-        <button
+        <button className="button__input"
             disabled={data.name === "" || data.phone === "" || data.email === ""}
             type="submit"
         >

@@ -16,7 +16,7 @@ function ItemListContainer() {
       let resp = await getItems();
       setProducts(resp);
     } else {
-      /*  let resp = await getItemByCategory(idCategory); */
+       /* let resp = await getItemByCategory(idCategory); */
       let resp = await getItems(idCategory);
       setProducts(resp);
     }

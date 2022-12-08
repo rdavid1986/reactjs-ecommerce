@@ -32,7 +32,7 @@ export default async function getItems() {
   const documentSnapshot = await getDocs(collectionProductsRef);
 
   const documentsData = documentSnapshot.docs.map((doc) => {
-    /* let docDataWithId = doc.data();
+     let docDataWithId = doc.data();
     docDataWithId.id = doc.id; 
     // spread operator
     return {
@@ -79,8 +79,8 @@ export async function createOrder(order) {
   const docOrder = await addDoc(collectionRef, order);
 
   return docOrder.id;
-}
-
+} */
+/* 
 export async function exportArrayToFirestore() {
   const products = [
     {
@@ -430,4 +430,5 @@ export async function exportArrayToFirestore() {
     console.log("documento creado, id:", docOrder.id);
   }
 }
+
  */

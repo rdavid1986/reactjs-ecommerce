@@ -2,7 +2,7 @@ import "./cartWiget.css";
 //importamos el hook de context: useContext(para tarer item a mostrar en el carrito)
 import React, { useContext } from "react";
 //importamos el context que queremos utilizar
-import { cartContext } from "../../context/cartContext";
+import { cartContext } from "../../../context/cartContext";
 
 import { Link } from "react-router-dom";
 

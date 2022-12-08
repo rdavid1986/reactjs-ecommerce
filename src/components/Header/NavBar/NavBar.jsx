@@ -1,6 +1,6 @@
 import "./NavBar.css";
 import { Link } from "react-router-dom";
-import CardWiget from "../NavBar/CardWiget";
+import CardWiget from "./CardWiget";
 
 function NavBar() {
   return (
