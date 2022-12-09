@@ -1,11 +1,10 @@
-
 Tech Store React App
-
 
 Tech Store es un proyecto de tienda online de tecnologia.
 
 Posee las funciones de:
-Listado de productos en item list container en formato cards. Detalle del producto el item detail con imágenes y descripción. Filtrado por categoria de productos. Carrito de compras con gestión de productos en el cual se puede limpiar la lista o eliminar un item individualmente. Formulario a completar por el cliente el cual nos devuelve una orden de compra al completar y enviar el formulario de compra. 
+Listado de productos en item list container en formato cards. Detalle del producto en item detail con imágen y descripción del mismo. 
+Posee un filtrado por categoria de productos. Carrito de compras con gestión de productos en el cual se puede limpiar la lista o eliminar un item individualmente del carrito. Formulario a completar por el cliente el cual nos devuelve una orden de compra y nos devuelve una id de compra. 
 
 React Firestore Database en el cual estan alojados los productos y al cual se carga la orden de compra y devuelve un id de compra
 
