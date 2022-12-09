@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../NavBar/NavBar";
+import NavBar from "../Header/NavBar/NavBar";
 import { Link } from "react-router-dom";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
         </Link>
       </div>
       <NavBar />
-    </header> 
+    </header>
   );
 }
 

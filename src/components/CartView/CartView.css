@@ -1,0 +1,32 @@
+.cart__item{
+    height: 150px;
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart__item img {
+    height: 150px;
+    width: 150px;
+    margin: o auto;
+}
+.title{
+    color:white;
+    width:500px;
+}
+.price{
+    color: white;
+}
+.count{
+    font-size: 30px;
+}
+.totalPricePerItems{
+    color:white;
+    font-size: 30px;
+}
+.cart__item button{
+    margin-right: 100px;
+}

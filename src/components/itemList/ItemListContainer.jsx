@@ -2,25 +2,30 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 import "./itemList.css";
-import  getItems  from "../../services/mockService.js";
-import ItemList from "./ItemList"
-import Loader from "../Loaders/Loader"
+import getItems from "../../services/mockService";
+/* import getItems, { getItemByCategory } from "../../data/firebase"; */
+import ItemList from "./ItemList";
+import Loader from "../Loaders/Loader";
 
 function ItemListContainer() {
-  const [products, setProducts] = useState(null);
+  const [products, setProducts] = useState([]);
   const { idCategory } = useParams();
-  
-  async function getItemsAsync() {
-    let res = await getItems(idCategory);
-    setProducts(res);
-  }
 
-  useEffect(() => {
-    getItemsAsync();
-    return() => {
-      console.log("Componente desmontado")
+  async function getItemsAsync() {
+    if (!idCategory) {
+      let resp = await getItems();
+      setProducts(resp);
+    } else {
+       /* let resp = await getItemByCategory(idCategory); */
+      let resp = await getItems(idCategory);
+      setProducts(resp);
     }
-  },[idCategory]);
+  }
+  useEffect(
+    () => {
+      getItemsAsync();
+    } , [idCategory]
+  );
 
   return (
     <div className="catalogo">

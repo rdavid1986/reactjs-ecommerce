@@ -17,7 +17,7 @@ export function GetItems(idCategory) {
     }
   });
 }
-export function getSingleItem(idParam){
+export function getSingleItem(idParam) {
   return new Promise((resolve, reject) => {
     let itemFind = products.find((item) => item.id === Number(idParam));
     if (itemFind === undefined) reject("El producto no existe");
@@ -25,7 +25,7 @@ export function getSingleItem(idParam){
     setTimeout(() => {
       resolve(itemFind);
     }, 500);
-  })
+  });
 }
 
 export default GetItems;

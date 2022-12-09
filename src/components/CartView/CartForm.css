@@ -1,0 +1,38 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: flex-end;
+    justify-content: center;
+}
+.name__input label{
+    color: white;
+}
+.email__input label{
+    color: white;
+}
+.phone__input label{
+    color: white;
+}
+.name__input input{
+    margin-left: 10px;
+    margin-top:10px;
+    box-shadow: 5px 2px 22px black;
+}
+.email__input input{
+    margin-left: 10px;
+    margin-top:10px;
+    box-shadow: 5px 2px 22px black;
+}
+.phone__input input{
+    margin-left: 10px;
+    margin-top:10px;
+    box-shadow: 5px 2px 22px black;
+}
+.button__input {
+    color: black;
+    margin-top:10px;
+    background-color: rgb(66, 173, 66);
+    box-shadow: 5px 2px 22px black;
+}
