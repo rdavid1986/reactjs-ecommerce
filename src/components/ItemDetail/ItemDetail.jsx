@@ -22,7 +22,7 @@ function ItemDetail({product}) {
             <div className="card__detail__description">
                 <h2>{product.title}</h2>
                 <p>{product.description}</p>
-                <h4 className="price">$ {product.price}</h4>
+                <h3 className="card__detail__price">$ {product.price}</h3>
             </div>
                 <ItemCount onAddToCart={onAddToCart} stock={product.stock}  />
         </div>

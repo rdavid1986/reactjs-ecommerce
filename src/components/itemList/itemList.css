@@ -1,3 +1,9 @@
+.catalogo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: center;
+}
 .item__list {
     display: flex;
     color: white;
@@ -9,7 +15,7 @@
 }
 .card__div {
     overflow: hidden;
-    margin: 40px;
+    margin: 15px;
     border-radius: 15px;
     background: white;
     box-shadow:  8px 8px 16px #1a1919,
@@ -26,4 +32,6 @@
 .card__img {
     margin-top: 20px;
     height: 190px;
+}
+.btncard{
 }
