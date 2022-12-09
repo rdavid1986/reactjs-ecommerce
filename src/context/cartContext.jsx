@@ -34,18 +34,20 @@ export function CartContextProvider({ children }) {
 	return total;
   }
 
-  function removeCart() {
-	console.log(cart, "carrito")
+  function clearCart() {
+	console.log(cart, "Se vacio el carrito");
 	  setCart([])
   }
-  function removeItem() {
-	const newCart = [...cart];
-	newCart.pop();
-	setCart(newCart);
+  function removeItem(id) {
+	const deleteItemListCart = cart.filter(product => {
+           return product.id !== id
+        })
+		console.log(cart, "Se removio un tiem del carrito");
+	setCart(deleteItemListCart);
   }
    function totalPricePerItems(id) {
-		const idItem = cart.map(product => product.id).indexOf(id)
-		return cart[idItem].price * cart[idItem].count
+		const totalPricePerItems = cart.map(product => product.id).indexOf(id)
+		return cart[totalPricePerItems].price * cart[totalPricePerItems].count
 	}
    function totalPriceInCart() {
 		///calcular el costo total de la compra 
@@ -66,7 +68,7 @@ export function CartContextProvider({ children }) {
 			  itemsInCart,
 			  cart,
 			  addToCart,
-			  removeCart,
+			  clearCart,
 			  removeItem,
 			  totalPricePerItems,
 			  totalPriceInCart

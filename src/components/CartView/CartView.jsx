@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import MyButton from "../MyButton/MyButton";
 
 function CartView() {
-  const { cart, removeItem, removeCart, totalPricePerItems, totalPriceInCart } = useContext(cartContext);
+  const { cart, removeItem, clearCart, totalPricePerItems, totalPriceInCart } = useContext(cartContext);
   let navigate = useNavigate();
 
   /* function handleExport() {
@@ -41,7 +41,7 @@ function CartView() {
 							<p className="count">unidades: {item.count}</p>
 							<p className="totalPricePerItems">Precio total de unidades: $ {totalPricePerItems(item.id)}</p>
 
-							<MyButton className="removeItem" onTouchButton={() => removeItem(item.id)} colorBtn="red">
+							<MyButton onTouchButton={() => removeItem(item.id)} colorBtn="red">
 							X
 							</MyButton>
 						</div>
@@ -50,7 +50,7 @@ function CartView() {
 			{
 				cart.length !== 0 && 
 					<div>
-						<MyButton onTouchButton={() => removeCart()}>Vaciar carrito</MyButton>
+						<MyButton onTouchButton={() => clearCart()}>Vaciar carrito</MyButton>
 						<h1>Resumen de compra</h1>
 						<h1>Precio total de su compra: {totalPriceInCart()}</h1>
 						{<CartForm onSubmit={handleCheckout} />} 

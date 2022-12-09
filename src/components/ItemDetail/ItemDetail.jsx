@@ -9,8 +9,9 @@ function ItemDetail({product}) {
      const { addToCart } = useContext(cartContext);
 
   function onAddToCart(count) {
+    
     alert(`Agregaste ${count} items al carrito!`);
-    /* setState(count) */
+    
     addToCart(product, count);
   }
     return (
