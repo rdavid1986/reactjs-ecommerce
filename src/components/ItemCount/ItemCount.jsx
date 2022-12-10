@@ -23,7 +23,9 @@ function ItemCount({ stock, onAddToCart }) {
       </div>
       <div>
         <MyButton 
-        onTouchButton={() => onAddToCart(Count)}>Agregar al carrito</MyButton>
+        onTouchButton={() => onAddToCart(Count)}>
+        Agregar al carrito
+        </MyButton>
       </div>
 
     </div>

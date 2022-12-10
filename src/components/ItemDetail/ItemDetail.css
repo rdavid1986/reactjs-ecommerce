@@ -1,13 +1,20 @@
-.card__detail {
+.catalogo{
     display: flex;
-    width: 848px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+.card__detail {
     min-height: 70vh;
+    width: 848px;
+    display: flex;
     margin: 0 auto;
-    border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
+    border-radius: 20px;
     border: solid 1px black;
-    /* background-image: url(../../../public/img/fondocard.gif.crdownload); */
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;

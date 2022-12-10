@@ -19,8 +19,6 @@ function Item({ title, imgurl, price, id, stock, discount }) {
         {stock <= 0 && <p>No tenemos stock</p>}
         <Link  className="btncard" to={urlDetail}>
           <MyButton
-         
-            text=""
             onTouchButton={() => console.log("click")}
             colorBtn={stock <= 0 && "red"}>
             ver mas
