@@ -9,7 +9,7 @@ import MyButton from "../MyButton/MyButton";
 
 function CartView() {
   const { cart, removeItem, clearCart, totalPricePerItems, totalPriceInCart } = useContext(cartContext);
-  let navigate = useNavigate();
+  /* let navigate = useNavigate(); */
 
   /* function handleExport() {
 	  exportArrayToFirestore();

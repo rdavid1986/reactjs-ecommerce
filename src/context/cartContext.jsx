@@ -33,6 +33,7 @@ export function CartContextProvider({ children }) {
 	cart.forEach((itemInCart) => (total = total + itemInCart.count));
 	return total;
   }
+  
 
   function clearCart() {
 	console.log(cart, "Se vacio el carrito");

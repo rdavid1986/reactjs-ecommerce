@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ItemCount.css";
-import MyButton from "../MyButton/MyButton"
+import MyButton from "../MyButton/MyButton";
 
 function ItemCount({ stock, onAddToCart }) {
   const [Count, setCount] = useState(1);
@@ -11,6 +11,7 @@ function ItemCount({ stock, onAddToCart }) {
   function handleSubtraction() {
     if (Count > 1) setCount(Count - 1);
   }
+  
 
   return (
     <div>

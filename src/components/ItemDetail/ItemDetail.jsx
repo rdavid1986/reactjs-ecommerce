@@ -2,6 +2,7 @@ import ItemCount from "../ItemCount/ItemCount"
 import "./ItemDetail.css"
 import { useContext} from "react"
 import { cartContext } from "../../context/cartContext";
+import swal from "sweetalert";
 /* import MyButton from "../MyButton/MyButton";
 import { Link } from "react-router-dom"; */
 
@@ -9,8 +10,9 @@ function ItemDetail({product}) {
      const { addToCart } = useContext(cartContext);
 
   function onAddToCart(count) {
-    
-    alert(`Agregaste ${count} items al carrito!`);
+
+    swal('Se agrego el producto al carrito', "Vaya al carrito para ver sus productos!", "success");
+    /* alert(`Agregaste ${count} items al carrito!`); */
     
     addToCart(product, count);
   }
@@ -24,7 +26,7 @@ function ItemDetail({product}) {
                 <p>{product.description}</p>
                 <h3 className="card__detail__price">$ {product.price}</h3>
             </div>
-                <ItemCount onAddToCart={onAddToCart} stock={product.stock}  />
+                <ItemCount  onAddToCart={onAddToCart} stock={product.stock}  />
         </div>
     )
 }

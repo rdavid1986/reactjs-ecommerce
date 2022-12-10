@@ -24,7 +24,7 @@ function ItemListContainer() {
   useEffect(
     () => {
       getItemsAsync();
-    } , [idCategory]
+    } ,[idCategory]
   );
 
   return (
