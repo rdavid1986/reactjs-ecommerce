@@ -36,3 +36,7 @@
     background-color: rgb(66, 173, 66);
     box-shadow: 5px 2px 22px black;
 }
+.finalizar__compra p {
+    color: white;
+    font-size: 35px;
+}

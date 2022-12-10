@@ -2,12 +2,8 @@ import React, { useState } from "react";
 import "./MyButton.css";
 
 function MyButton (props) {
-    let[colorBtn/* , setColorBtn */] = useState(props.colorBtn)
+    let[colorBtn] = useState(props.colorBtn)
 
-      /*  function handdleClick() {
-        setColorBtn("#555");
-          //props.onTocuhButton && props.onTouchButton();  
-      }   */
 
       return (
         <button onClick={props.onTouchButton} 

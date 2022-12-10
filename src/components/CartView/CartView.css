@@ -1,3 +1,6 @@
+.cart__container h1 {
+    color: white;
+}
 .cart__item{
     height: 150px;
     width: 100%;

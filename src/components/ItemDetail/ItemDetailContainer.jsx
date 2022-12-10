@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { getSingleItem } from "../../services/mockService";
-/* import { getSingleItem } from "../../data/firebase"; */
+/* import { getSingleItem } from "../../services/mockService"; */
+import { getSingleItem } from "../../data/firebase";
 import ItemDetail from "./ItemDetail";
 import { useParams } from "react-router-dom";
 import Loader from "../Loaders/Loader";
@@ -17,7 +17,6 @@ function ItemDetailContainer() {
       setIsLoading(false);
     });
   }
-  //if
   useEffect(() => {
     getItemAsync();
   });

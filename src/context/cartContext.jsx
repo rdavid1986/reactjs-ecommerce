@@ -43,7 +43,7 @@ export function CartContextProvider({ children }) {
 	const deleteItemListCart = cart.filter(product => {
            return product.id !== id
         })
-		console.log(cart, "Se removio un tiem del carrito");
+		console.log(cart, "Se removio el itemcseleccionado del carrito");
 	setCart(deleteItemListCart);
   }
    function totalPricePerItems(id) {
@@ -60,11 +60,6 @@ export function CartContextProvider({ children }) {
 			return cartItemsTotalPrice;
 		}
 
-  /*  function alreadyInCart(id){
-			 return true/false 
-		} */
-
-   
   const value = {
 			  itemsInCart,
 			  cart,
@@ -74,8 +69,7 @@ export function CartContextProvider({ children }) {
 			  totalPricePerItems,
 			  totalPriceInCart
 		  };
-  //3. retornamos el Provider del context creado
-  //4. Pasamos en la prop "value" las variables que queramos hacer visibles */
+		  
   return (
 	<cartContext.Provider value={ value }>
 	  { children }

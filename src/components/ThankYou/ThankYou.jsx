@@ -1,4 +1,5 @@
-import React from "react";import { useParams } from "react-router-dom";
+import React from "react";
+import { useParams } from "react-router-dom";
 
 function ThankYou() {
     const idOrder = useParams().idOrder;

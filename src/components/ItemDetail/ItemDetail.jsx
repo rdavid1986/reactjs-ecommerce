@@ -3,8 +3,6 @@ import "./ItemDetail.css"
 import { useContext} from "react"
 import { cartContext } from "../../context/cartContext";
 import swal from "sweetalert";
-/* import MyButton from "../MyButton/MyButton";
-import { Link } from "react-router-dom"; */
 
 function ItemDetail({product}) {
      const { addToCart } = useContext(cartContext);

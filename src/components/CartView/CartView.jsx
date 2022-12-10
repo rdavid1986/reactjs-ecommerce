@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../CartView/CartView.css";
 import { cartContext } from "../../context/cartContext";
-/* import { createOrder } from "../../data/firebase"; */
+import { createOrder } from "../../data/firebase";
 
 import CartForm from "./CartForm.jsx";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ import MyButton from "../MyButton/MyButton";
 
 function CartView() {
   const { cart, removeItem, clearCart, totalPricePerItems, totalPriceInCart } = useContext(cartContext);
-  /* let navigate = useNavigate(); */
+  let navigate = useNavigate();
 
   /* function handleExport() {
 	  exportArrayToFirestore();
@@ -24,11 +24,11 @@ function CartView() {
 	  total: 0,
 	  date: new Date(),
 	};
-  /* const orderId = await createOrder(order);
-	navigate(`/thankyou/${orderId}`);  */
+  const orderId = await createOrder(order);
+	navigate(`/thankyou/${orderId}`); 
   }
   return (
-		<div className="cart-container">
+		<div className="cart__container">
 				<h1>Tu carrito</h1>
 			{
 				cart.length === 0
@@ -49,7 +49,7 @@ function CartView() {
 			}
 			{
 				cart.length !== 0 && 
-					<div>
+					<div className="finalizar__compra">
 						<MyButton onTouchButton={() => clearCart()}>Vaciar carrito</MyButton>
 						<p>Resumen de compra</p>
 						<p>Precio total de su compra: ${totalPriceInCart()}</p>

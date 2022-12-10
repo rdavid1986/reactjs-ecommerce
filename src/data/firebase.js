@@ -1,4 +1,4 @@
-/* import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 import {
   getFirestore,
   collection,
@@ -67,7 +67,7 @@ export async function createOrder(order) {
   const collectionRef = collection(dataBase, "orders");
   const docOrder = await addDoc(collectionRef, order);
   return docOrder.id;
-} */
+}
 /* 
 export async function exportArrayToFirestore() {
   const products = [
