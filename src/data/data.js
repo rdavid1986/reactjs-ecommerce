@@ -187,7 +187,7 @@ const products = [
     stock: 78,
     category: "AMD-Radeon",
     imgurl:
-      "https://s3-sa-east-1.amazonaws.com/saasargentina/vQhY6VNpBc5hhrjY9QFZ/imagen",
+      "https://videocardz.net/ezoimgfmt/cdn.videocardz.net/cache/60844a2fd287f624a1d26ad4ab7150f9-630x540.jpg?ezimgfmt=rs%3Adevice%2Frscb1-1&quot",
   },
   {
     id: 18,
