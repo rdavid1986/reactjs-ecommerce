@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import "./itemList.css";
 /* import getItems from "../../services/mockService"; */
-import getItems, { getItemByCategory } from "../../data/firebase";
+import getItems, { getItemByCategory } from "../../data/data.js";
 import ItemList from "./ItemList";
 import Loader from "../Loaders/Loader";
 
