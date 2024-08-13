@@ -9,6 +9,7 @@ import {
   where,
   addDoc,
 } from "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDHzkj4doV3q9JK1iIsYggEzSf_MXv5jvQ",
   authDomain: "ecommerce-react-coderhou-40f15.firebaseapp.com",
@@ -18,19 +19,16 @@ const firebaseConfig = {
   appId: "1:1097612781609:web:fdb13b3039dae4cf759438",
   measurementId: "G-PTXF56QVDJ",
 };
+
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const dataBase = getFirestore(app);
-//1. Traer todos los documentos
+
+// 1. Traer todos los documentos
 export default async function getItems() {
-  //1.A Referenciamos nuestra colección
   const collectionProductsRef = collection(dataBase, "products");
-  //1.B Solicitamos todos los documentos de la colección
   const documentSnapshot = await getDocs(collectionProductsRef);
   const documentsData = documentSnapshot.docs.map((doc) => {
-     let docDataWithId = doc.data();
-    docDataWithId.id = doc.id; 
-    // spread operator
     return {
       ...doc.data(),
       id: doc.id,
@@ -38,7 +36,8 @@ export default async function getItems() {
   });
   return documentsData;
 }
-//2. Traer un documento por ID
+
+// 2. Traer un documento por ID
 export async function getSingleItem(idParams) {
   const docRef = doc(dataBase, "products", idParams);
   const docSnapshot = await getDoc(docRef);
@@ -46,7 +45,8 @@ export async function getSingleItem(idParams) {
   itemData.id = docSnapshot.id;
   return itemData;
 }
-//3. Traer todos los  documentos según categoria
+
+// 3. Traer todos los documentos según categoría
 export async function getItemByCategory(categoryParams) {
   const collectionRef = collection(dataBase, "products");
   const queryCategory = query(
@@ -62,12 +62,14 @@ export async function getItemByCategory(categoryParams) {
   });
   return documentsData;
 }
-//4. Enviar la orden a Firebase
+
+// 4. Enviar la orden a Firebase
 export async function createOrder(order) {
   const collectionRef = collection(dataBase, "orders");
   const docOrder = await addDoc(collectionRef, order);
   return docOrder.id;
 }
+
 /* 
 export async function exportArrayToFirestore() {
   const products = [
