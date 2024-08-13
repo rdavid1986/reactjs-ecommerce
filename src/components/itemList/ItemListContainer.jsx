@@ -21,11 +21,11 @@ function ItemListContainer() {
       setProducts(resp);
     }
   }
-  useEffect(
-    () => {
-      getItemsAsync();
-    }
-  );
+  
+  useEffect(() => {
+  getItemsAsync();
+  }, []);
+
 
   return (
     <div className="catalogo">
