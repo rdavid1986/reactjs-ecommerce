@@ -1,12 +1,12 @@
-import { initializeApp } from "firebase/app";
+ import { initializeApp } from "firebase/app";
 import {
   getFirestore,
   collection,
-  doc,
+ /*  doc,
   getDocs,
   getDoc,
   query,
-  where,
+  where, */
   addDoc,
 } from "firebase/firestore";
 
@@ -23,7 +23,7 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const dataBase = getFirestore(app);
-
+/*
 // 1. Traer todos los documentos
 export default async function getItems() {
   const collectionProductsRef = collection(dataBase, "products");
@@ -63,12 +63,13 @@ export async function getItemByCategory(categoryParams) {
   return documentsData;
 }
 
-// 4. Enviar la orden a Firebase
-export async function createOrder(order) {
-  const collectionRef = collection(dataBase, "orders");
-  const docOrder = await addDoc(collectionRef, order);
-  return docOrder.id;
-}
+*/
+ // 4. Enviar la orden a Firebase
+ export async function createOrder(order) {
+   const collectionRef = collection(dataBase, "orders");
+   const docOrder = await addDoc(collectionRef, order);
+   return docOrder.id;
+ } 
 
 /* 
 export async function exportArrayToFirestore() {

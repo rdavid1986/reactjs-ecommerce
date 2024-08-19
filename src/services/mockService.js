@@ -27,5 +27,10 @@ export function getSingleItem(idParam) {
     }, 500);
   });
 }
+export async function getItemByCategory(idCategory) {
+  const documentsData = products.filter( product => product.category === idCategory);
+  
+  return documentsData;
+}
 
 export default GetItems;

@@ -24,7 +24,7 @@ function CartView() {
 	  total: 0,
 	  date: new Date(),
 	};
-  const orderId = await createOrder(order);
+  	const orderId = await createOrder(order);
 	navigate(`/thankyou/${orderId}`); 
   }
   return (

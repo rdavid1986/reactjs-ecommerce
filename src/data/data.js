@@ -175,7 +175,7 @@ const products = [
     stock: 110,
     category: "AMD-Radeon",
     imgurl:
-      "https://s3-sa-east-1.amazonaws.com/saasargentina/Q7MotGFWp2YmCQVc3ZE7/imagen",
+      "https://pg.asrock.com/Graphics-Card/photo/Radeon%20RX%206800%20XT%20Phantom%20Gaming%20D%2016G%20OC(L1).png",
   },
   {
     id: 17,
@@ -187,7 +187,7 @@ const products = [
     stock: 78,
     category: "AMD-Radeon",
     imgurl:
-      "https://s3-sa-east-1.amazonaws.com/saasargentina/vQhY6VNpBc5hhrjY9QFZ/imagen",
+      "https://www.powercolor.com/_upload/images//2206080956360.png",
   },
   {
     id: 18,
@@ -222,7 +222,7 @@ const products = [
     stock: 140,
     category: "AMD-Radeon",
     imgurl:
-      "https://s3-sa-east-1.amazonaws.com/saasargentina/Mfnuvjdpa2Jntw9TfyyE/imagen",
+      "https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-7391253.jpg",
   },
   {
     id: 21,

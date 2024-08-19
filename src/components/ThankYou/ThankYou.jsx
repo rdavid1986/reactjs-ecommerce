@@ -5,8 +5,8 @@ function ThankYou() {
     const idOrder = useParams().idOrder;
 
     return(
-        <div style={{ color: "white" }}>
-            <h1>Gracias por su compra, vuelvas prontos</h1>
+        <div style={{ color: "white" , padding: "20px"}}>
+            <h1>Gracias por su compra, vuelva prontos</h1>
             <h2>Su numero de transaccion es : <strong>{idOrder}</strong></h2>
         </div>
     )
