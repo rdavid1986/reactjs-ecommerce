@@ -175,7 +175,7 @@ const products = [
     stock: 110,
     category: "AMD-Radeon",
     imgurl:
-      "https://pg.asrock.com/Graphics-Card/photo/Radeon%20RX%206800%20XT%20Phantom%20Gaming%20D%2016G%20OC(L1).png",
+      "https://static.chollometro.com/info-block/raw/default/19657840261695626136/re/1160x650/qt/90/19657840261695626136.jpg ",
   },
   {
     id: 17,
