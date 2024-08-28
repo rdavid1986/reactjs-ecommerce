@@ -35,7 +35,7 @@
 .card__detail__price{
     color:black;
 }
-@media(max-width: 400px) {
+@media(max-width: 600px) {
     .card__detail{
         display: flex;
         flex-direction: column;
