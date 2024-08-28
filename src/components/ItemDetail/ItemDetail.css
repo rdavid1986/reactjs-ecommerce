@@ -35,3 +35,27 @@
 .card__detail__price{
     color:black;
 }
+@media(max-width: 400px) {
+    .card__detail{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vh;
+        margin: auto;
+        padding: 50px;
+        color: black
+    }
+    .card__detail__img{
+        margin:0;
+        background-size: cover;
+    }
+    .detail__img{
+        width: 300px;
+
+    }
+    .card__detail__description{
+        width: 300px;
+        margin: 0;
+        padding: 0;
+    }
+}
