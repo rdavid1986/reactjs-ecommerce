@@ -13,7 +13,7 @@ function CardWiget() {
 
   return (
       <Link to="Cart">
-        <img src="img/cartShopping.png" className="cartShopping" alt="Cart" />
+        <img src="/img/CartShopping.png" className="cartShopping" alt="Cart" />
         {
           cardWigetCount !== 0 &&
           <span className="cart__count" style={{ color: "yellow" }}>{cardWigetCount}</span>
